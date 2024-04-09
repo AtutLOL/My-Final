@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial;
+  }
+  * a {
+    text-decoration: none;
+  }
+  * li {
+    list-style: none;
+  }
+  .container {
+    min-height: 120vh;
+    padding-bottom: 50px;
+    margin: 0 auto;
+    position: relative;
+  }
+  .bg {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .bg::after {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    filter: brightness(70%);    
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/4/44/Central_Pattaya_and_beach_at_sunset_in_2017.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .navBar {
+    display: flex;
+    width: 85%;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+    height: 15vh;
+  }
+  .navBar ul {
+    display: flex;
+    align-items: center;
+  }
+  .navBar ul li {
+    padding: 0 25px;
+  }
+  .navBar ul li a {
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+  }
+  .navBar .logo a {
+    font-size: 2.3rem;
+    color: #fff;
+  }
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+  }
+  .phuket {
+    color: #fff;
+    padding: 25px;
+  }
+  .card {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+  }
+  .card h2 {
+    color: #fff;
+    position: absolute;
+    bottom: 15px;
+    left: 20px;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+  }
+  .card .box1,
+  .box2,
+  .box3,
+  .box4 {
+    width: 90%;
+    height: 220px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    border-radius: 25px;
+    cursor: pointer;
+  }
+  .box1 {
+    background-image: url("https://media.robinhoodstory.com/upload/page_builder_image/cms-img-20220902_s_2b4WLw0dy7.webp");
+  }
+  .box2 {
+    background-image: url("https://dynamic-media-cdn.tripadvisor.com/media/photo-o/09/a4/7b/40/20151201-101150-largejpg.jpg?w=1200&h=-1&s=1");
+  }
+  .box3 {
+    background-image: url("https://s.isanook.com/tr/0/ui/286/1431193/129901156_988415818352866_2697957254853140838_n.jpg");
+  }
+  .box4 {
+    background-image: url("https://f.ptcdn.info/407/075/000/r2c3u810afrdcPDxbO4q-o.jpg");
+  }
+  .phuket h2 {
+    font-size: 2rem;
+    letter-spacing: 2.8px;
+  }
+  .text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .txt h1 {
+    font-size: 7rem;
+  }
+  .phuket p {
+    opacity: 0.4;
+  }
+  .tnx h2 i {   
+    color: #fd7e13;
+  }
+  .card div {
+    transition: 0.5s;
+  }
+  .card div:hover {
+    transition: 0.3s;
+    transform: translateY(-10px);
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  }
+  .navBar ul li a {
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    position: relative; /* เพิ่ม */
+    padding-bottom: 5px; /* เพิ่ม */
+}
+
+.navBar ul li a::after {
+    content: ''; /* เพิ่ม */
+    position: absolute; /* เพิ่ม */
+    bottom: 0; /* เพิ่ม */
+    left: 0; /* เพิ่ม */
+    width: 100%; /* เพิ่ม */
+    height: 2px; /* เพิ่ม */
+    background-color: #000; /* เพิ่ม */
+    transition: width 0.3s ease; /* เพิ่ม */
+}
+
+.navBar ul li a:hover::after {
+    width: 50%; /* เพิ่ม */
+}
+.phuket p {
+    opacity: 1;
+    color: #fff; /* เพิ่ม */
+}
+
+
+  
